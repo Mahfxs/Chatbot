@@ -1,0 +1,136 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello", "hi", "hey", "good morning", "good afternoon",
+        "good evening", "howdy", "what's up", "greetings"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! What can I do for you?",
+        "Hey! Great to see you. How can I help?",
+        "Greetings! What's on your mind?"
+      ]
+    },
+    {
+      "tag": "farewell",
+      "patterns": [
+        "bye", "goodbye", "see you", "take care", "later",
+        "see you later", "good night", "talk to you later"
+      ],
+      "responses": [
+        "Goodbye! Have a wonderful day!",
+        "See you later! Take care!",
+        "Bye! Feel free to come back anytime.",
+        "It was great chatting with you. Goodbye!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks", "thank you", "appreciate it", "that helped",
+        "thank you so much", "cheers", "many thanks"
+      ],
+      "responses": [
+        "You're welcome! Happy to help.",
+        "Anytime! Let me know if you need anything else.",
+        "Glad I could assist!",
+        "No problem at all!"
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "who are you", "what are you", "tell me about yourself",
+        "what can you do", "your name", "what is your name"
+      ],
+      "responses": [
+        "I'm Nova, an AI chatbot built with Python and NLP to help answer your questions!",
+        "I'm an AI assistant designed to understand your questions and provide helpful responses.",
+        "My name is Nova. I use natural language processing to understand and respond to you!"
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "what time is it", "current time", "tell me the time",
+        "what's the time", "time please"
+      ],
+      "responses": [
+        "The current time is {time}.",
+        "It's {time} right now!"
+      ]
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "what is today's date", "current date", "what day is it",
+        "today's date", "what's the date"
+      ],
+      "responses": [
+        "Today is {date}.",
+        "The current date is {date}."
+      ]
+    },
+    {
+      "tag": "economics",
+      "patterns": [
+        "what is inflation", "explain monetary policy", "what is gdp",
+        "interest rates", "central bank", "economy", "recession",
+        "what is deflation", "fiscal policy"
+      ],
+      "responses": [
+        "Inflation is the rate at which the general level of prices for goods and services rises over time.",
+        "Monetary policy refers to actions by a central bank to control money supply and interest rates.",
+        "GDP (Gross Domestic Product) measures the total economic output of a country.",
+        "A central bank manages a nation's currency, money supply, and interest rates."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help", "can you help", "i need help", "assist me",
+        "what can you help with", "support"
+      ],
+      "responses": [
+        "Of course! I can help with general questions, time & date, economics topics, and more. Just ask!",
+        "Sure thing! Ask me anything — about economics, general knowledge, or just have a chat.",
+        "I'm here to help! Try asking me about economics, the time, or just say hello."
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "tell me a joke", "say something funny", "joke please",
+        "make me laugh", "funny joke"
+      ],
+      "responses": [
+        "Why did the economist fail his exam? Because he thought supply and demand were a band! 😄",
+        "Why don't scientists trust atoms? Because they make up everything! 😂",
+        "I told my computer I needed a break — now it won't stop sending me vacation ads! 😅"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "what's the weather", "weather today", "is it raining",
+        "temperature outside", "weather forecast"
+      ],
+      "responses": [
+        "I don't have live weather data, but you can check weather.com or Google for the latest forecast!",
+        "I can't check real-time weather, but try a weather app for accurate info!"
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm not sure I understood that. Could you rephrase?",
+        "Hmm, I didn't quite catch that. Can you try asking differently?",
+        "I'm still learning! Could you say that in another way?",
+        "That's an interesting question, but I'm not sure how to answer it yet."
+      ]
+    }
+  ]
+}
