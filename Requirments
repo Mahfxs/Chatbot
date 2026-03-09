@@ -1,0 +1,141 @@
+# 🤖 Nova — AI Chatbot with NLP
+
+A Python-based conversational chatbot featuring **intent recognition**, **dialogue management**, and **context-aware response generation** — built without any external ML dependencies for easy setup and portability.
+
+---
+
+## Features
+
+-  **Intent Recognition** — Tokenization + keyword similarity scoring to classify user input
+-  **Dialogue Management** — Tracks conversation state, context, and history across turns
+-  **Response Generation** — Randomized, template-based responses with dynamic placeholders (`{time}`, `{date}`)
+-  **JSON-Driven Intents** — Easily extend intents, patterns, and responses in `intents.json`
+-  **Full Test Suite** — Unit + integration tests via `pytest`
+- **Conversation Logging** — Exports full chat history to JSON on exit
+
+---
+
+## 📁 Project Structure
+
+```
+chatbot/
+├── chatbot.py           # Core chatbot logic
+├── intents.json         # Intents, patterns & responses
+├── test_chatbot.py      # Unit & integration tests
+├── requirements.txt     # Dependencies
+└── README.md            # You're reading it!
+```
+
+---
+
+##  Getting Started
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/your-username/nova-chatbot.git
+cd nova-chatbot
+```
+
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the chatbot
+```bash
+python chatbot.py
+```
+
+---
+
+##  Example Conversation
+
+```
+==================================================
+  Nova Chatbot — Ready
+  Type 'quit' to exit | 'history' to view log
+==================================================
+
+Nova: Hello! I'm Nova, your AI assistant. How can I help you today?
+
+You: hi there
+Nova: Hey! Great to see you. How can I help?
+
+You: what is inflation
+Nova: Inflation is the rate at which the general level of prices for goods and services rises over time.
+
+You: what time is it
+Nova: The current time is 14:32.
+
+You: tell me a joke
+Nova: Why did the economist fail his exam? Because he thought supply and demand were a band! 😄
+
+You: bye
+Nova: Goodbye! Have a wonderful day! 
+[✔] Conversation saved to conversation_log.json
+```
+
+---
+
+## ➕ Adding New Intents
+
+Open `intents.json` and add a new intent block:
+
+```json
+{
+  "tag": "your_intent",
+  "patterns": [
+    "trigger phrase one",
+    "another example phrase"
+  ],
+  "responses": [
+    "Response option one",
+    "Response option two"
+  ]
+}
+```
+
+---
+
+##  Running Tests
+
+```bash
+pytest test_chatbot.py -v
+```
+
+---
+##  Special Commands (in chat)
+
+| Command     | Action                              |
+|-------------|-------------------------------------|
+| `quit`/`bye`| Exit and save conversation log      |
+| `history`   | Print full conversation history     |
+| `reset`     | Clear conversation context          |
+
+---
+
+##  Tech Stack
+
+- **Python 3.10+** — Core language
+- **JSON** — Intent configuration
+- **pytest** — Testing framework
+- **re / random / datetime** — Standard library NLP & utilities
+
+---
+
+##  Future Improvements
+
+- [ ] Integrate transformer-based NLP (spaCy / HuggingFace)
+- [ ] Add IBM Watson Assistant API backend
+- [ ] Build a web frontend (Flask + HTML)
+- [ ] Add sentiment analysis layer
+- [ ] Multi-language support
+
+---
+
+## 📄 License
+
+MIT License — free to use, modify, and distribute.
+
+---
+
